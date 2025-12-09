@@ -4,6 +4,9 @@ Here are project pre-requirements - note first i will create eks then will ec2 l
   -then we configure oidc connecter for give access to kuberntes
   -create eks cluster thorugh powershell
   -create fargate profile
+  - launch ec2 in same vpc , security group and in same subnet
+  - install mysql and create mysql user and grnat full permission , create db and table
+  - and 3306 port should listen from any ip 0.0.0.0 and in security group allow 3306 to any ip or same security group that are attach in eks
   -deploy deployment and service yaml file through kubctl
   -create iam policy and iam role thorugh eksctl
   -deploy alb controller though Heml chart
