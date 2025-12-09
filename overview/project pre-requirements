@@ -1,0 +1,10 @@
+Here are project pre-requirements - note first i will create eks then will ec2 launch
+  -AWS admin account , if you use iam user or sso user then grant resource perrmission
+  -install  eksctl and kubctl and aws cli in local system and configure aws cli and docker in local system
+  -then we configure oidc connecter for give access to kuberntes
+  -create eks cluster thorugh powershell
+  -create fargate profile
+  -deploy deployment and service yaml file through kubctl
+  -create iam policy and iam role thorugh eksctl
+  -deploy alb controller though Heml chart
+  
