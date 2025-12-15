@@ -1,0 +1,190 @@
+body {
+	margin : 0;
+	padding : 0;
+	text-align : left;
+	font : 75% "Trebuchet MS", verdana, arial, sans-serif;
+	line-height : 1.5em;
+	background : #A7C6D2 ;
+	color : #000;
+	}
+				/*CONTAINER*/
+	#wrapper 
+	{
+	position : relative;
+	width : 1500px;
+	margin-right : auto;
+	margin-left : auto;
+	padding : 0;
+	border : 0px solid rgb(0, 0, 0);
+	background : #A7C6D2;
+	}
+				/*TOP TITLE BAR*/
+	#title {
+	width : 1500px;
+	margin-left : 0px;
+	padding : 0;
+	text-align : left;
+	background : #A7C6D2;
+	color : #000;
+	}
+	#title h1 {
+	margin : 0;
+	padding : 10px;
+	font-size : 200%;
+	text-transform : uppercase;
+	letter-spacing : 5px;
+	background : inherit;
+	color : #A7C6D2;
+	}
+				/*BANNER*/
+	#header {
+	background : url(images/header.jpg) no-repeat;
+	width : 770px;
+	height : 200px;
+	margin : 0 0 0 5px;
+	padding : 0 0 0 0;
+	}
+				/*TOP NAVIGATION*/
+	.container {
+	width : 1460px;
+	height : 35px;
+	margin : 20px 0 10px 5px;
+	background-color:#222222;
+	color:#A7C6D2;
+	}
+	#navCircle {
+	margin : 0;
+	padding : 0 0 20px 20px;
+	
+	}
+	#navCircle li {
+	margin : 0;
+	padding : 0;
+	display : inline;
+	list-style-type : none;
+	margin-top:5px;
+	}
+	#navCircle a:link, #navCircle a:visited {
+	float : right;
+	font-size : 1.5em;
+	padding : 0 25px 15px 25px;
+	text-decoration : none;
+	background : inherit;
+	color:#ffffff;
+	margin-top:5px;
+	}
+	#navCircle a:link.active, #navCircle a:visited.active, #navCircle a:hover {
+	background-color : inherit;
+	color : #ffffff;
+	
+	}
+				/*MAIN CONTENT*/
+	#content {
+	width : 1260px;
+	float : left;
+	margin-top : 0;
+	margin-left : 11px;
+	padding : 5px;
+	border-right : 3px solid #000000;
+	}
+	#content p {
+	padding : 0 20px;
+	}
+				/*SIDEBAR*/
+	#right-col {
+	width : 175px;
+	margin : 5px 0 0 1300px;
+	border-left : 1px none #000000;
+	padding : 3px;
+	}
+				/*FOOTER*/
+	#footer {
+	margin : 50px 0 0 0;
+	padding : 5px;
+	font : 90% "Trebuchet MS", verdana, arial, sans-serif;
+	background : #000000;
+	color : #fff;
+	}
+	#footer a:link, #footer a:visited {
+	background : inherit;
+	color : #c3f0f0;
+	}
+	#footer a:hover {
+	background : inherit;
+	color : #fff;
+	text-decoration : none;
+	}
+				/*SCROLLBAR*/
+	div.scroll {
+	height : auto;
+	width : 160px;
+	padding : 1ex;
+	margin : 0 0 30px 5px;
+	border : 1px solid #ffffff;
+	background : #DCDFA6;
+	color : #000;
+	}
+				/*TYPOGRAPHY*/
+	h2 {
+	margin : 20px;
+	font-size : 140%;
+	
+	letter-spacing : 3px;
+	background : inherit;
+	color : rgb(0, 0, 0);
+	}
+	h3 {
+	margin : 5px;
+	font-size : 120%;
+	letter-spacing : 5px;
+	background : inherit;
+	color : rgb(0, 0, 0);
+	}
+	blockquote {
+	font-weight : bold;
+	font-style : italic;
+	color : #fffffe;
+	}
+				/*LINKS*/
+	a img {
+	border : none;
+	}
+	a:link, a:visited {
+	text-decoration : none;
+	background : inherit;
+	color : #000000;
+	}
+	a:hover {
+	text-decoration : underline;
+	background : inherit;
+	color : #f92f2f;
+	}
+	ul.side {
+	list-style-type : square;
+	padding : 0;
+	margin : 0;
+	background : inherit;
+	color : #ffffff;
+	}
+	.side li {
+	padding-left : 0.2em;
+	margin-left : 2em;
+	}
+				/*CLASSES*/
+	.news {
+	font-size : 90%;
+	background : inherit;
+	color : #000;
+	}
+	.imgleft {
+	float : left;
+	border : 1px solid #ffffff;
+	padding : 5px;
+	margin-right : 15px;
+	}
+	.imgright {
+	float : right;
+	border : 1px solid #ffffff;
+	padding : 5px;
+	margin-left : 15px;
+	}
