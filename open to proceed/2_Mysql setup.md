@@ -5,7 +5,7 @@ install mysql
 sudo apt install mysql-server -y
 Restart server
 
-bash
+```bash
 reboot
 
 
