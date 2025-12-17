@@ -1,5 +1,5 @@
 install docker on your local system
-'''bash
+```bash
 login in docker
 hello
 bash
