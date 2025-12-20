@@ -18,7 +18,7 @@ mysql setup
 ```
 sudo mysql_secure_installation
 ```
-# DB user 
+# DB user (reccomand option 2)
 option 1 
 you can use root user but you have to set up as authenticate with password not with auth socket
 ```
@@ -44,7 +44,31 @@ Change it to:
 bind-address = 0.0.0.0
 
 ```
-option2
+option2 : 
+create new user
+```
+CREATE USER 'admin'@'%' IDENTIFIED BY 'StrongPassword123';
+```
+grant full permission to user
+```
+GRANT ALL PRIVILEGES ON *.* TO 'admin'@'%' WITH GRANT OPTION;
+FLUSH PRIVILEGES;
+```
+Allow remote connections from any ip
+```
+sudo nano /etc/mysql/mysql.conf.d/mysqld.cnf
+```
+Find this line:
+```
+bind-address = 127.0.0.1
+```
+Change it to:
+```
+bind-address = 0.0.0.0
+
+
+
+
 
 
 
