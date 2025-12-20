@@ -22,6 +22,20 @@ kubectl version --client
 ```
 # Install eksctl for create AWS eks infra in aws
 ```
+curl.exe -LO "https://github.com/eksctl-io/eksctl/releases/latest/download/eksctl_windows_amd64.zip"
+```
+Extract the zip
+```
+Expand-Archive -Path .\eksctl_windows_amd64.zip -DestinationPath .\
+```
+move to system32 path .exe file # it work as environment variables
+```
+move .\eksctl.exe C:\Windows\System32\
+```
+verify installation
+```
+eksctl version
+```
 
 
 
