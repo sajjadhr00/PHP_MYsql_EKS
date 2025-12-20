@@ -31,19 +31,7 @@ CREATE USER 'root'@'%' IDENTIFIED BY 'YourNewPassword';
 GRANT ALL PRIVILEGES ON *.* TO 'root'@'%';
 FLUSH PRIVILEGES;
 ```
-Allow remote connections from any ip
-```
-sudo nano /etc/mysql/mysql.conf.d/mysqld.cnf
-```
-Find this line:
-```
-bind-address = 127.0.0.1
-```
-Change it to:
-```
-bind-address = 0.0.0.0
 
-```
 option2 : 
 create new user
 ```
@@ -54,7 +42,7 @@ grant full permission to user
 GRANT ALL PRIVILEGES ON *.* TO 'admin'@'%' WITH GRANT OPTION;
 FLUSH PRIVILEGES;
 ```
-Allow remote connections from any ip
+# Allow remote connections from any ip
 ```
 sudo nano /etc/mysql/mysql.conf.d/mysqld.cnf
 ```
