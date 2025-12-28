@@ -42,6 +42,24 @@ eksctl utils associate-iam-oidc-provider --cluster eyewear --approve
 ```
 note: if get region error then recongifure aws region
 
+# download IAM policy and create iam policy 
+```
+curl -O https://github.com/sajjadhr00/PHP_MYsql_EKS/blob/main/depoyment%20and%20service/IAM_policy.json
+```
+```
+aws iam create-policy --policy-name AWSLoadBalancerControllerIAMPolicy --policy-document file://IAM_policy.json
+```
+# create service account , role and attach policy , note - mention your account number 
+```
+eksctl create iamserviceaccount --cluster=eyewear --namespace=kube-system --name=aws-load-balancer-controller --role-name AmazonEKSLoadBalancerControllerRole --attach-policy-arn=arn:aws:iam::<your-aws-account-id>:policy/AWSLoadBalancerControllerIAMPolicy
+  --approve
+```
+
+
+
+
+
+
 
 
 
