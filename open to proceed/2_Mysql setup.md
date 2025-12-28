@@ -99,9 +99,9 @@ show tables;
 # if admin_master and other table showing then you have completed db setup
 
 # security group
-```
+
 <img width="1085" height="337" alt="image" src="https://github.com/user-attachments/assets/3d017a0f-9b43-4687-ae26-e5c8e630488e" />
-```
+
 
 
 
