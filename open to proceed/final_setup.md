@@ -54,8 +54,42 @@ aws iam create-policy --policy-name AWSLoadBalancerControllerIAMPolicy --policy-
 eksctl create iamserviceaccount --cluster=eyewear --namespace=kube-system --name=aws-load-balancer-controller --role-name AmazonEKSLoadBalancerControllerRole --attach-policy-arn=arn:aws:iam::<your-aws-account-id>:policy/AWSLoadBalancerControllerIAMPolicy
   --approve
 ```
+# Deploy ALB controller
+Add helm repo
+```
+helm repo add eks https://aws.github.io/eks-charts
+```
+Update the repo
+```
+helm repo update eks
+```
+install - mention your vpc id , region and cluster name
+```
+helm install aws-load-balancer-controller eks/aws-load-balancer-controller -n kube-system --set clusterName=eyewear --set serviceAccount.create=false --set serviceAccount.name=aws-load-balancer-controller --set region=ap-south-1 --set vpcId=<your-vpc-id>
+```
+Verify that the deployments are running , wait for 10 minutes
+```
+kubectl get deployment -n kube-system aws-load-balancer-controller -w
+```
+<img width="657" height="37" alt="image" src="https://github.com/user-attachments/assets/f81fdb84-4171-4898-b07a-9c834472ce49" />
+when you get load balancer 2/2 in ready state then your load balancer is in working state
+if not show in ready sate , you have to check aws load balancer deployment config by below command 
+```
+kubectl edit deploy/aws-load-balancer-cotroller -n kube-system
+```
+ALL the error mention in status 
 
+# final verification public link generate process
+```
+kubectl get ingress -n eyewear
+```
+output:
+<img width="1083" height="37" alt="image" src="https://github.com/user-attachments/assets/e300c965-c959-4057-91b1-a90500c8c767" />
 
+wait 5 minute to became alb in active state 
+# copy address and paste in browser , then you can see eyewear website
+
+all the credential all website is store in Eyewaer/connection/shopping.sql
 
 
 
