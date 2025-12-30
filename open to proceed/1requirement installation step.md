@@ -36,6 +36,20 @@ verify installation
 ```
 eksctl version
 ```
+# helm chart installation
+open cmd
+```
+curl.exe -LO https://get.helm.sh/helm-v3.16.2-windows-amd64.zip
+```
+unzip
+```
+Expand-Archive helm-v3.16.2-windows-amd64.zip -DestinationPath .
+```
+move to registry
+```
+move .\windows-amd64\helm.exe C:\Windows\System32\
+```
+
 
 
 
