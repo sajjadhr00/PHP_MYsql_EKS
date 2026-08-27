@@ -1,8 +1,10 @@
 # note : run all command in powershell as administration
 # create eks cluster - It will take time created
+
 ```
 eksctl create cluster --name eyewear --region ap-south-1 --fargate
 ```
+if any error come , delete the stack from cloud formation 
 download aws eks cluster resouces get get update after download  2 command is use to get update
 ```
 onece it created you can see aws-> eks-> eyewaer
