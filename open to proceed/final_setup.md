@@ -15,6 +15,10 @@ kubectl get nodes
 ```
 eksctl create fargateprofile --cluster eyewear --region ap-south-1 --name eyewear --namespace eyewear
 ```
+create kubuernetes namespace
+```
+kubectl create namespace eyewear
+```
 onece it created you can see aws-> eks-> eyewaer-> resource -> new farget profile
 # Deploy the Kubernetes Deployment and Service YAML files to fetch and run the web application from the specified path
 ```
