@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: eyewear
-        image: 185542456565.dkr.ecr.ap-south-1.amazonaws.com/eyewear
+        image: 185542456565.dkr.ecr.ap-south-1.amazonaws.com/eyewear:latest
         ports:
         - containerPort: 80
         env:
