@@ -82,7 +82,7 @@ kubectl get deployment -n kube-system aws-load-balancer-controller -w
 when you get load balancer 2/2 in ready state then your load balancer is in working state
 if not show in ready sate , you have to check aws load balancer deployment config by below command 
 ```
-kubectl edit deploy/aws-load-balancer-cotroller -n kube-system
+kubectl edit deploy/aws-load-balancer-controller -n kube-system
 ```
 ALL the error mention in status 
 
