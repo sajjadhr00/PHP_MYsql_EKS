@@ -54,7 +54,7 @@ note: if get region error then recongifure aws region
 
 # download IAM policy and create iam policy 
 ```
-curl -O https://github.com/sajjadhr00/PHP_MYsql_EKS/blob/main/depoyment%20and%20service/IAM_policy.json
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/sajjadhr00/PHP_MYsql_EKS/refs/heads/main/depoyment%20and%20service/IAM_policy.json" -OutFile "IAM_policy.json"
 ```
 ```
 aws iam create-policy --policy-name AWSLoadBalancerControllerIAMPolicy --policy-document file://IAM_policy.json
