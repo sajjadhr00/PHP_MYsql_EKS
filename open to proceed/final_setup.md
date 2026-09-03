@@ -97,6 +97,8 @@ output:
 <img width="1083" height="37" alt="image" src="https://github.com/user-attachments/assets/e300c965-c959-4057-91b1-a90500c8c767" />
 
 # wait 5 minute to became alb in provion to active state
+
+# use http before link to access
 # copy address and paste in browser , then you can see eyewear website
 
 all the credential all website is store in Eyewaer/connection/shopping.sql
