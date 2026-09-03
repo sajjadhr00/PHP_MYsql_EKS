@@ -23,8 +23,9 @@ kubectl create namespace eyewear
 ```
 onece it created you can see aws-> eks-> eyewaer-> resource -> new farget profile
 # Deploy the Kubernetes Deployment and Service YAML files to fetch and run the web application from the specified path
+copy deployemnt link with raw format
 ```
-kubectl apply -f https://github.com/sajjadhr00/PHP_MYsql_EKS/blob/main/depoyment%20and%20service/deployment.yaml
+kubectl apply -f https://raw.githubusercontent.com/sajjadhr00/PHP_MYsql_EKS/refs/heads/main/depoyment%20and%20service/deployment.yaml
 ```
 # now we have to open aws -> eks -> resouces -> config and secret -> Secret -> db-secret
 ```
